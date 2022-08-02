@@ -17,11 +17,13 @@
             padding: 15vh 24px 0 24px;
             font-size: 40px;
             font-weight: 600;
+            animation: fadeInUp 1.25s;
         }
         p {
             padding: 6px 24px 14px 24px;
             font-size: 14px;
             font-weight: 500;
+            animation: fadeInUp 1.5s;
         }
     }
 
@@ -70,10 +72,11 @@
                 justify-content: center;
                 height: 40px;
                 margin-top: 20px;
+                animation: fadeInDown 1.5s;
             }
             i {
                 color: rgba(23, 26, 32, 0.8);
-                animation: animateDown infinite 1.5s;
+                animation: animateDown infinite 1.5s 3s;
             }
         }
     }

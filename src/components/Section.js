@@ -4,7 +4,7 @@ import "./Section.css";
 import "./Footer.scss";
 import Data from "../data/carInfo.json";
 import { Link } from "react-router-dom";
-import 'animate.css'; 
+// import 'animate.css'; 
 
 function Section(props) {
   return (
@@ -21,8 +21,8 @@ function Section(props) {
       >
     
           <div className="modelName">
-            <h1 className="title animate__animated">{props.title}</h1>
-            {props.subtitle && <p className="subtitle animate__fadeInUp">{props.subtitle}</p>}
+            <h1 className="title">{props.title}</h1>
+            {props.subtitle && <p className="subtitle">{props.subtitle}</p>}
           </div>
         <div className="bottom">
           <div className="buttons">

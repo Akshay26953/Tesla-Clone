@@ -6,6 +6,12 @@
         display: flex;
         justify-content: center;
     }
+    .btn-left {
+        animation: fadeInLeft 1.5s;
+    }
+    .btn-right {
+        animation: fadeInRight 1.5s;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -29,5 +35,11 @@
     .footer ul {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 625px){
+    .btn {
+        animation: fadeInUp 1s;
     }
 }

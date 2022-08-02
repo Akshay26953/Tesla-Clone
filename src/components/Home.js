@@ -3,8 +3,9 @@ import Data from '../data/carInfo.json';
 import Section from './Section';
 
 function Home() {
-    const allSection = Data.map(item => {
+    const allSection = Data.map((item, index) => {
         return <Section 
+            key={index}
             title={item.title}
             subtitle={item.description}
             image={item.image}
