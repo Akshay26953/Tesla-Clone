@@ -140,11 +140,18 @@
         }
 
         .menu1 {
-            overflow-x: auto;
-
+            //add scroll to menu section
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+            //hide scrollbar in menu section
+            &::-webkit-scrollbar {
+                width: 0;
+            }
             ul {
                 & {
-                    padding: 4px 32px;
+                    padding: 4px 32px 200px 32px;
                 }
                 li {
                     & {

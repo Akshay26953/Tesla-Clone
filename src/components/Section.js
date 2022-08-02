@@ -50,7 +50,7 @@ function Section(props) {
               </button>
           </div>
             <div className="arrow">
-              <Link to={`#section${props.id + 1}`}>
+              {/* <Link to={`#section${props.id + 1}`}> */}
                 <i
                   className="fa-solid fa-chevron-down fa-lg"
                   style={{
@@ -58,7 +58,7 @@ function Section(props) {
                   }}
                   onClick={scrollDown}
                 ></i>
-              </Link>
+              {/* </Link> */}
             </div>
           <div
             className="footer"

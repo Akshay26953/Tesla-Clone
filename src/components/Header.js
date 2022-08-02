@@ -53,6 +53,8 @@ function Header() {
               <button
                 onClick={() => {
                   setShowMenu(true);
+                //Below code will make window unscrollable only can scroll popup menu
+                document.body.style.overflow = "hidden";
                 }}
               >
                 Menu
@@ -79,6 +81,8 @@ function Header() {
             <button
               onClick={() => {
                 setShowMenu(false);
+                //Below code will make window scrollable
+                document.body.style.overflow = "auto";
               }}
             >
               <i className="fa-solid fa-xmark fa-xl" style={{ color: "#393c41" }}></i>
