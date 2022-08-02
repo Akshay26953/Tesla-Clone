@@ -1,0 +1,33 @@
+@media (min-width: 1200px) {
+    .smMenuHide{
+        display: none;
+    } 
+    .footer ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menuHide {
+        display: none;
+    }  
+    .smMenuHide{
+        display: block;
+    } 
+    .footer ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
