@@ -7,6 +7,13 @@ import { Link } from "react-router-dom";
 // import 'animate.css'; 
 
 function Section(props) {
+  const scrollDown = () => {
+    window.scrollTo({
+      top: (props.id + 1)*(window.innerHeight),
+      left: 0,
+      behavior: "smooth"
+    });
+  }
   return (
     <div className="container">
       <section
@@ -49,6 +56,7 @@ function Section(props) {
                   style={{
                     visibility: `${props.id < Data.length - 1 ? "visible" : "hidden"}`,
                   }}
+                  onClick={scrollDown}
                 ></i>
               </Link>
             </div>
