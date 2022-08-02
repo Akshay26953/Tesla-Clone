@@ -8,10 +8,9 @@ import { Link } from "react-router-dom";
 
 function Section(props) {
   return (
-    <>
-      <div
+    <div className="container">
+      <section
         id={`section${props.id}`}
-        className="section"
         style={{
           backgroundImage: `url(${props.image})`,
           backgroundSize: "cover",
@@ -87,8 +86,8 @@ function Section(props) {
             </ul>
           </div>
         </div>
-      </div>
-    </>
+      </section>
+    </div>
   );
 }
 
